@@ -1,8 +1,26 @@
 aid: brainly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brainly.png
 name: Brainly
-description: 'Brainly is a company surfaced as a portfolio company of general-catalyst, point-nine and
-  added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Brainly is an education technology company founded in 2009 in Krakow, Poland (originally
+  Zadane.pl) and now headquartered in New York City. It operates the world''s largest online learning
+  and homework-help community, a gamified, crowdsourced social-learning network where students, parents,
+  and teachers ask and answer academic questions with verified answers from peers, educators, and Brainly''s
+  proprietary AI. As of 2025 the platform serves over 350 million monthly users across roughly 35 countries
+  and has evolved from a community Q&A product into an agentic AI Learning Companion spanning homework
+  help, AI tutoring, test prep, and classroom participation. Brainly is a consumer subscription business
+  (Brainly Plus); it publishes no official public developer API — this profile captures its public web,
+  security, and policy surface.'
 url: https://raw.githubusercontent.com/api-evangelist/brainly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Education
+- EdTech
+- Learning
+- Homework Help
+- AI Tutor
+- Community
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +50,28 @@ maintainers:
 common:
 - type: Website
   url: https://brainly.com
+- type: Pricing
+  url: https://brainly.com/app/brainlyplus
+- type: HelpCenter
+  url: https://faq.brainly.com/hc/en-us
+- type: TermsOfService
+  url: https://brainly.com/pages/terms_of_use
+- type: PrivacyPolicy
+  url: https://brainly.com/pages/privacy_policy
+- type: GitHubOrganization
+  url: https://github.com/brainly
+- type: SecurityTxt
+  url: well-known/brainly-security.txt
+- type: WellKnown
+  url: well-known/brainly-well-known.yml
+- type: DomainSecurity
+  url: security/brainly-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/brainly-vulnerability-disclosure.yml
+- type: Security
+  url: https://brainly.com/responsible-disclosure-program
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
